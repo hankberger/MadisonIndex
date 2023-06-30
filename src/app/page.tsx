@@ -46,7 +46,7 @@ export default async function Home() {
             <span className='underline'>Explore More</span> &gt;
           </h3>
         </div>
-        <div className='animate-fade3SecDelay flex flex-row'>
+        <div className='animate-fade3SecDelay flex flex-row overflow-x-scroll'>
           <div className='mt-2 w-64 h-48 bg-black rounded-2xl'>
 
           </div>
