@@ -1,6 +1,7 @@
 import './globals.css'
 import { Advent_Pro, Akshar, Albert_Sans } from 'next/font/google'
 import Image from 'next/image'
+import NavMenu from './components/NavMenu'
 
 const inter = Albert_Sans({ subsets: ['latin'] })
 
@@ -14,42 +15,24 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  //Constants
-  let buttonSize = 28;
+  
 
   function handleMenuSelect(){
     console.log("hello world")
   }
+  let buttonSize = 24
+
 
   return (
-    <html lang="en" className='scroll-smooth'>
+    <html lang="en" className='scroll-smooth bg-white'>
       <body className={`${inter.className} flex flex-col items-center bg-white transition-all`}>
         <nav className='bg-white max-w-5xl w-full'>
-          <h1 className="text-3xl font-light text-black m-4">
+          <h1 className="animate-topFade text-3xl font-light text-black m-4">
             Madison<span className='font-bold'>Index</span>
           </h1>
         </nav>
         {children}
-        <nav className='flex flex-row justify-around fixed bottom-0 h-16 w-full bg-white'>
-          <div className='w-5/12 h-full rounded-3xl flex flex-row justify-around items-center bg-white'>
-            <svg xmlns="http://www.w3.org/2000/svg" width={buttonSize} height={buttonSize} className="fill-indigo-500" viewBox="0 0 16 16">
-              <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
-              <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width={buttonSize-4} height={buttonSize-4} className="fill-indigo-500" viewBox="0 0 16 16">
-              <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-3.5-7h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z"/>
-            </svg>
-          </div>
-          <div className='w-5/12 h-full rounded-3xl flex flex-row justify-around items-center bg-white'>
-            <svg xmlns="http://www.w3.org/2000/svg" width={buttonSize} height={buttonSize} className="fill-indigo-500" viewBox="0 0 16 16">
-              <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width={buttonSize} height={buttonSize} className="fill-indigo-500" viewBox="0 0 16 16">
-              <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z"/>
-              <path d="M13 6.5a6.471 6.471 0 0 1-1.258 3.844c.04.03.078.062.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1.007 1.007 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5ZM6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z"/>
-            </svg>
-          </div>
-        </nav>
+       <NavMenu/>
       </body>
     </html>
   )

@@ -19,11 +19,11 @@ export default async function Home() {
   console.log(data);
 
   return (
-    <main className="flex bg-white min-h-screen w-full flex-col p-4">
-      <h1 className='text-2xl font-normal text-black'>
-        For You:
+    <main className="flex max-w-5xl bg-white min-h-screen w-full flex-col p-4">
+      <h1 className='animate-fade1SecDelay text-2xl font-normal text-black'>
+        For You
       </h1>
-      <div className='w-full rounded-2xl bg-black h-48 overflow-hidden relative '>
+      <div className='animate-fade1SecDelay w-full rounded-2xl bg-black h-48 overflow-hidden relative '>
             <Image
             src="/madisonSunset.png"
             alt="A picture of the Madison, WI skyline during sunset."
@@ -38,6 +38,66 @@ export default async function Home() {
               </h2>
             </div> */}
         </div>
+        <div className='mt-5 flex flex-col justify-between items-baseline'>
+          <h1 className='animate-fade3SecDelay text-2xl font-normal text-black'>
+          Chatter
+          </h1>
+          <h3 className='animate-fade3SecDelay mt-[-4px] text-xs font-light text-indigo-400'>
+            <span className='underline'>Explore More</span> &gt;
+          </h3>
+        </div>
+        <div className='animate-fade3SecDelay flex flex-row'>
+          <div className='mt-2 w-64 h-48 bg-black rounded-2xl'>
+
+          </div>
+          <div className='mt-2 w-64 h-48 bg-black rounded-2xl'>
+
+          </div>
+          <div className='mt-2 w-64 h-48 bg-black rounded-2xl'>
+
+          </div>
+        </div>
+
+        <div className='animate-fade4SecDelay mt-5 flex flex-col justify-between items-baseline'>
+          <h1 className='text-2xl font-normal text-black'>
+          Chatter:
+          </h1>
+          <h3 className='mt-[-4px] text-xs font-light text-indigo-400'>
+            <span className='underline'>Explore More</span> &gt;
+          </h3>
+        </div>
+        <div className='animate-fade4SecDelay flex flex-row'>
+          <div className='mt-2 w-64 h-48 bg-black rounded-2xl'>
+
+          </div>
+          <div className='mt-2 w-64 h-48 bg-black rounded-2xl'>
+
+          </div>
+          <div className='mt-2 w-64 h-48 bg-black rounded-2xl'>
+
+          </div>
+        </div>
+
+        <div className='mt-5 flex flex-col justify-between items-baseline'>
+          <h1 className='text-2xl font-normal text-black'>
+          Chatter:
+          </h1>
+          <h3 className='mt-[-4px] text-xs font-light text-indigo-400'>
+            <span className='underline'>Explore More</span> &gt;
+          </h3>
+        </div>
+        <div className='flex flex-row'>
+          <div className='mt-2 w-64 h-48 bg-black rounded-2xl'>
+
+          </div>
+          <div className='mt-2 w-64 h-48 bg-black rounded-2xl'>
+
+          </div>
+          <div className='mt-2 w-64 h-48 bg-black rounded-2xl'>
+
+          </div>
+        </div>
+
         <div className='mt-5 flex flex-col justify-between items-baseline'>
           <h1 className='text-2xl font-normal text-black'>
           Chatter:

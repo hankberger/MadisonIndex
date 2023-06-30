@@ -45,6 +45,7 @@ function ProductCard(props: {productDetails: ProductProps}) {
                     
                 </div>
                 
+                
             </Link>
         </div>
     )
