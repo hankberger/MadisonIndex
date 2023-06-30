@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Carousel from './components/Carousel'
 
 async function getData() {
   const res = await fetch('https://jsonplaceholder.typicode.com/todos/1')
