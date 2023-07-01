@@ -1,7 +1,8 @@
 import './globals.css'
 import { Advent_Pro, Akshar, Albert_Sans } from 'next/font/google'
 import Image from 'next/image'
-import NavMenu from './components/NavMenu'
+import NavMenu from '../components/NavMenu'
+import ProfileCard from '@/components/ProfileCard'
 
 const inter = Albert_Sans({ subsets: ['latin'] })
 
@@ -24,15 +25,26 @@ export default function RootLayout({
 
 
   return (
-    <html lang="en" className='scroll-smooth bg-white'>
-      <body className={`${inter.className} flex flex-col items-center bg-white transition-all`}>
-        <nav className='bg-white max-w-5xl w-full'>
-          <h1 className="animate-topFade text-3xl font-light text-black m-4">
-            Madison<span className='font-bold'>Index</span>
-          </h1>
-        </nav>
-        {children}
-       <NavMenu/>
+    <html lang="en" className='scroll-smooth'>
+      <body className={`${inter.className} w-full flex flex-col items-center transition-all`}>
+        <div className='w-full h-full bg-white flex items-center flex-col'>
+            <nav className='bg-white max-w-5xl w-full flex justify-between items-center'>
+              <h1 className="animate-topFade text-3xl font-light text-slate-900 m-4">
+                Madison<span className='font-bold'>Index</span>
+              </h1>
+              <div className='animate-topFade overflow-hidden h-12 w-12 rounded-full border-2 border-indigo-300 mr-4 ml-4'>
+                <Image
+                src="/user.png"
+                height={150}
+                width={150}
+                alt="user profile picture"
+                />
+              </div>
+            </nav>
+            {children}
+            <div id="spacerforstaticmenu" className='h-24 w-full'></div>
+          <NavMenu/>
+        </div>
       </body>
     </html>
   )

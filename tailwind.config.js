@@ -40,7 +40,15 @@ module.exports = {
           '0%': { opacity: '0', transform: 'translateY(-30px)' },
           '60%': { opacity: '0', transform: 'translateY(-30px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
-        }
+        },
+        popUp: {
+          '0%': { opacity: '1', transform: 'translateY(100%)' },
+          '100%': { opacity: '1', transform: 'translateY(25%)' },
+        },
+        popDown: {
+          '0%': { opacity: '1', transform: 'translateY(25%)' },
+          '100%': { opacity: '1', transform: 'translateY(100%)' },
+        },
       },
       animation: {
         bottomFade: 'bottomFade 1s ease-in-out',
@@ -48,7 +56,9 @@ module.exports = {
         fade1SecDelay: 'fade1SecDelay 1s ease-in-out',
         fade2SecDelay: 'fade2SecDelay 1s ease-in-out',
         fade3SecDelay: 'fade3SecDelay 1s ease-in-out',
-        fade4SecDelay: 'fade4SecDelay 1.1s ease-in-out',
+        fade4SecDelay: 'fade4SecDelay 1s ease-in-out',
+        popUp: 'popUp 1s ease-in-out',
+        popDown: 'popDown 1s ease-in-out'
       },
     },
   },
