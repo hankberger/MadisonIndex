@@ -63,7 +63,7 @@ export default async function Home() {
       </div>
       <div id="chatter" className=" flex flex-col gap-3">
         <ChatterCard username="funnyguy7" content="aaasd asdasdasdasdasdas dasdasdasdasd asdasdasdasdasda wsdasdas dasdA" profilePic="/traty.png" comments={10} upvotes={100}/>
-        <ChatterCard username="PigeonPatrol123" content="Heads up, the city's annual jazz festival starts next week. Don't miss out on some great music!" profilePic="/noir.png" comments={10} upvotes={100}/>
+        <ChatterCard username="PigeonPatrol123" content="Heads up, the city&apos;s annual jazz festival starts next week. Don&apos;t miss out on some great music!" profilePic="/noir.png" comments={10} upvotes={100}/>
         <ChatterCard username="CityCyclist66" content="New bike lanes on 5th Ave are a game changer. Thanks to the city council for hearing us out!" profilePic="/what.png" comments={10} upvotes={100}/>
       </div>
     </main>
