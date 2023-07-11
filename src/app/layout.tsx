@@ -29,7 +29,7 @@ export default function RootLayout({
       <body className={`${inter.className} w-full flex flex-col items-center transition-all`}>
         <div className='w-full h-full bg-white flex items-center flex-col'>
             <nav className='bg-white max-w-5xl w-full flex justify-between items-center'>
-              <h1 className="animate-topFade text-3xl font-light text-slate-900 m-4">
+              <h1 className="animate-topFade text-3xl font-light text-slate-800 m-4">
                 Madison<span className='font-bold'>Index</span>
               </h1>
               <div className='animate-topFade overflow-hidden h-12 w-12 rounded-full border-2 border-indigo-300 mr-4 ml-4'>
