@@ -13,7 +13,6 @@ export default function NavMenu(){
     const [selectedItem, setSelectedItem] = useState(features.home);
     
     let handleSelect = (feature:string): void => {
-        navigator.vibrate(40); // vibrate for 40ms
         setSelectedItem(feature);
     }
 
