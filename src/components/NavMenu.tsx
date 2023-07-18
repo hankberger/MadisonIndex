@@ -1,5 +1,6 @@
 'use client'
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import useSessionStorage from "@/hooks/useSessionStorage";
 import Link from 'next/link';
 
 export default function NavMenu(){
@@ -10,8 +11,13 @@ export default function NavMenu(){
         market: 'market',
         explore: 'explore'
     }
-   
-    const [selectedItem, setSelectedItem] = useState(sessionStorage.getItem("activity") ? sessionStorage.getItem("activity") : features.home);
+
+    
+    const [selectedItem, setSelectedItem] = useState(useSessionStorage("activity") || features.home);
+
+    useEffect(()=>{
+        console.log("hello")
+    }, [selectedItem])
     
     let handleSelect = (feature:string): void => {
         sessionStorage.setItem("activity", feature);
