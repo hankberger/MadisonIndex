@@ -49,6 +49,14 @@ module.exports = {
           '0%': { opacity: '1', transform: 'translateY(25%)' },
           '100%': { opacity: '1', transform: 'translateY(100%)' },
         },
+        slideUp:{
+          '0%': { transform: 'translateY(100%)'},
+          '100%': { transform: 'translateY(0)'}
+        },
+        slideDown:{
+          '0%': { transform: 'translateY(0)'},
+          '100%': { transform: 'translateY(100%)'}
+        }
       },
       animation: {
         bottomFade: 'bottomFade 1s ease-in-out',
@@ -58,7 +66,9 @@ module.exports = {
         fade3SecDelay: 'fade3SecDelay 1s ease-in-out',
         fade4SecDelay: 'fade4SecDelay 1s ease-in-out',
         popUp: 'popUp 1s ease-in-out',
-        popDown: 'popDown 1s ease-in-out'
+        popDown: 'popDown 1s ease-in-out',
+        slideUp: 'slideUp .4s ease-in-out',
+        slideDown: 'slideDown .4s ease-in-out forwards'
       },
     },
   },

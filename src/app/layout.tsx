@@ -1,8 +1,8 @@
 import './globals.css'
-import { Advent_Pro, Akshar, Albert_Sans } from 'next/font/google'
+import {Albert_Sans } from 'next/font/google'
 import Image from 'next/image'
 import NavMenu from '../components/NavMenu'
-import ProfileCard from '@/components/ProfileCard'
+
 
 const inter = Albert_Sans({ subsets: ['latin'] })
 
@@ -17,15 +17,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   
-
-  function handleMenuSelect(){
-    console.log("hello world")
-  }
-  let buttonSize = 24
-
-
   return (
-    <html lang="en" className='scroll-smooth'>
+    <html lang="en" className='scroll-smooth bg-white'>
       <body className={`${inter.className} w-full flex flex-col items-center transition-all`}>
         <div className='w-full h-full bg-white flex items-center flex-col'>
             <nav className='bg-white max-w-5xl w-full flex justify-between items-center'>
